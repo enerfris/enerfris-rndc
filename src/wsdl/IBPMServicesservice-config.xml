@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns="http://java.sun.com/xml/ns/jax-rpc/ri/config">
+	<wsdl location="file:C:\Users\sebas\Desktop\code\enerfrisoft-carga\src\META-INF\wsdl/IBPMServicesservice.wsdl" packageName="wsdl"/>
+</configuration>

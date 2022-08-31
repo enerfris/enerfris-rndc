@@ -1,0 +1,2778 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.9" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="jMenu3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Archivo"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenu3ActionPerformed"/>
+          </Events>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="registrar">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+G"/>
+                </Property>
+                <Property name="mnemonic" type="int" value="71"/>
+                <Property name="text" type="java.lang.String" value="Registrar manifiesto"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="registrarActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator4">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="salir">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+W"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Salir"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="salirActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu1">
+          <Properties>
+            <Property name="mnemonic" type="int" value="70"/>
+            <Property name="text" type="java.lang.String" value="Formularios"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="remesa">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+Ctrl+R"/>
+                </Property>
+                <Property name="mnemonic" type="int" value="82"/>
+                <Property name="text" type="java.lang.String" value="Remesa"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="remesaActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="manifiesto">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+Ctrl+M"/>
+                </Property>
+                <Property name="mnemonic" type="int" value="77"/>
+                <Property name="text" type="java.lang.String" value="Manifiesto"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="manifiestoActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Herramientas"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="registrarTerceros">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+Ctrl+T"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Registrar Terceros y Conductores"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="registrarTercerosActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="registrarVehiculos">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+Ctrl+V"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Registrar Vehiculos y Remolques"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="registrarVehiculosActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="ayuda">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Opciones"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="acercaDe">
+              <Properties>
+                <Property name="mnemonic" type="int" value="65"/>
+                <Property name="text" type="java.lang.String" value="Acerca de"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="acercaDeActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Registro manifiesto"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jScrollPane1" alignment="0" pref="1240" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jScrollPane1" alignment="0" pref="579" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JLayeredPane" name="jLayeredPane1">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
+            </Property>
+            <Property name="opaque" type="boolean" value="true"/>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace pref="45" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jPanel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jPanel6" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jPanel5" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jPanel7" max="32767" attributes="0"/>
+                                  <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jPanel9" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jPanel10" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="320" max="-2" attributes="0"/>
+                                  <Component id="viewManifiestos" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="limpiarCaracteristicas" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="connectionStatus" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jPanel4" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="46" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jLabel14" max="32767" attributes="0"/>
+                              <Component id="jPanel4" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="connectionStatus" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="limpiarCaracteristicas" alignment="1" max="32767" attributes="0"/>
+                              <Component id="viewManifiestos" alignment="1" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jPanel1" min="-2" pref="111" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jPanel6" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jPanel10" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
+                          <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                      <Component id="jPanel8" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel14">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="24" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Registro de Manifiesto"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JPanel" name="jPanel1">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                    <EtchetBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="CLEARCARACTERISTICASGENERALESMANIFIESTO" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="MUNICIPIOORIGENMANIFIESTO" min="-2" pref="365" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="CODMUNICIPIOORIGENMANIFIESTO" pref="74" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Component id="OPERACIONTRANSPORTE" min="-2" pref="270" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="CODOPERACIONTRANSPORTE" min="-2" pref="75" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="FECHAEXPEDICIONMANIFIESTO" min="-2" pref="270" max="-2" attributes="0"/>
+                                      <Component id="MUNICIPIODESTINOMANIFIESTO" min="-2" pref="361" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="CODMUNICIPIODESTINOMANIFIESTO" pref="74" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="CLEARCARACTERISTICASGENERALESMANIFIESTO" max="32767" attributes="0"/>
+                              <Component id="jLabel1" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="OPERACIONTRANSPORTE" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="CODOPERACIONTRANSPORTE" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="MUNICIPIOORIGENMANIFIESTO" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="CODMUNICIPIOORIGENMANIFIESTO" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="FECHAEXPEDICIONMANIFIESTO" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="MUNICIPIODESTINOMANIFIESTO" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="CODMUNICIPIODESTINOMANIFIESTO" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="14" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Caracteristicas Generales del Manifiesto"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel2">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Tipo manifiesto"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="OPERACIONTRANSPORTE">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="ManifiestoDAO.tipo_manifiesto(conn)" type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="OPERACIONTRANSPORTEActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="OPERACIONTRANSPORTE.setSelectedItem(null);&#xd;&#xa;"/>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel3">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Origen"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="MUNICIPIOORIGENMANIFIESTO">
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel4">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Destino"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="MUNICIPIODESTINOMANIFIESTO">
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel5">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Fecha expedici&#xf3;n"/>
+                  </Properties>
+                </Component>
+                <Component class="com.toedter.calendar.JDateChooser" name="FECHAEXPEDICIONMANIFIESTO">
+                  <Properties>
+                    <Property name="dateFormatString" type="java.lang.String" value="EEEE, dd MMMM yyyy"/>
+                    <Property name="focusCycleRoot" type="boolean" value="true"/>
+                    <Property name="minSelectableDate" type="java.util.Date" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new Date()" type="code"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jScrollPane1.getVerticalScrollBar().setUnitIncrement(16);"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JButton" name="CLEARCARACTERISTICASGENERALESMANIFIESTO">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/com/enerfrisoft/gui/sources/limpiar.png"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CLEARCARACTERISTICASGENERALESMANIFIESTOActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODMUNICIPIOORIGENMANIFIESTO">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODMUNICIPIODESTINOMANIFIESTO">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODOPERACIONTRANSPORTE">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel3">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                    <EtchetBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel9" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel10" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel11" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel12" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel13" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="NOMBREIDTITULARMANIFIESTO" alignment="0" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="MUNICIPIOTITULARMANIFIESTO" min="-2" pref="350" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="fieldMUNICIPIOTITULARMANIFIESTO" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Component id="NOMENCLATURADIRECCIONTITULARMANIFIESTO" alignment="0" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="SEDETITULARMANIFIESTO" alignment="0" pref="350" max="32767" attributes="0"/>
+                                              <Component id="IDTITULARMANIFIESTO" alignment="0" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="CODIDTITULARMANIFIESTO" max="32767" attributes="0"/>
+                                              <Component id="CODSEDETITULARMANIFIESTO" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="NUMIDTITULARMANIFIESTO" min="-2" pref="150" max="-2" attributes="0"/>
+                                              <Component id="TELEFONOSEDETITULARMANIFIESTO" min="-2" pref="150" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="CLEARTITULARMANIFIESTO" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="CLEARTITULARMANIFIESTO" max="32767" attributes="0"/>
+                              <Component id="jLabel6" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="IDTITULARMANIFIESTO" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODIDTITULARMANIFIESTO" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NUMIDTITULARMANIFIESTO" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="SEDETITULARMANIFIESTO" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODSEDETITULARMANIFIESTO" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NOMBREIDTITULARMANIFIESTO" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NOMENCLATURADIRECCIONTITULARMANIFIESTO" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="TELEFONOSEDETITULARMANIFIESTO" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="MUNICIPIOTITULARMANIFIESTO" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fieldMUNICIPIOTITULARMANIFIESTO" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel6">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="14" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Titular Manifiesto"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel7">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Tipo identificaci&#xf3;n"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="IDTITULARMANIFIESTO">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="ManifiestoDAO.tipo_id(conn)" type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IDTITULARMANIFIESTOActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="IDTITULARMANIFIESTO.setSelectedItem(null);&#xd;&#xa;"/>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel8">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Numero identificaci&#xf3;n"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JFormattedTextField" name="NUMIDTITULARMANIFIESTO">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel9">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Sede"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="SEDETITULARMANIFIESTO">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="0"/>
+                    </Property>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SEDETITULARMANIFIESTOActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel10">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Nombre"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NOMBREIDTITULARMANIFIESTO">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel11">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Direcci&#xf3;n"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel12">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Tel&#xe9;fono"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel13">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Municipio"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NOMENCLATURADIRECCIONTITULARMANIFIESTO">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="TELEFONOSEDETITULARMANIFIESTO">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="MUNICIPIOTITULARMANIFIESTO">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="CLEARTITULARMANIFIESTO">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/com/enerfrisoft/gui/sources/limpiar.png"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CLEARTITULARMANIFIESTOActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODIDTITULARMANIFIESTO">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="fieldMUNICIPIOTITULARMANIFIESTO">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODSEDETITULARMANIFIESTO">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel2">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                    <EtchetBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                          <Component id="CODMARCAVEHICULOCARGA" min="-2" pref="75" max="-2" attributes="0"/>
+                                          <Component id="CODMUNICIPIOTENEDORVEHICULOCARGA" min="-2" pref="75" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="jButton3" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel18" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel19" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel20" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel21" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel22" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel23" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel25" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel26" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel27" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel24" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Component id="jLabel37" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="NOMASEGURADORASOAT" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="MUNICIPIOTENEDORVEHICULOCARGA" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="NOMENCLATURADIRECCIONTENEDORVEHICULOCARGA" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="TENEDORVEHICULOCARGA" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="CONFIGURACIONVEHICULOCARGA" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="MARCAVEHICULOCARGA" alignment="0" max="32767" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="NUMIDTENEDORVEHICULOCARGA" min="-2" pref="252" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="CODTIPOIDTENEDORVEHICULOCARGA" min="-2" pref="75" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="NUMPLACA" alignment="0" min="-2" pref="265" max="-2" attributes="0"/>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                          <Component id="ANOFABRICACIONVEHICULOCARGA" alignment="0" pref="150" max="32767" attributes="0"/>
+                                                          <Component id="PESOVACIOVEHICULOCARGA" alignment="0" max="32767" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="UNIDADCAPACIDADVEHICULOCARGA" min="-2" pref="75" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                                      <Component id="FECHAVENCIMIENTOSOATVEHICULOCARGA" alignment="0" pref="150" max="32767" attributes="0"/>
+                                                      <Component id="NUMSEGUROSOAT" alignment="0" max="32767" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Component id="CODCONFIGURACIONRESULTANTE" min="-2" pref="333" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="81" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jButton3" max="32767" attributes="0"/>
+                              <Component id="jLabel15" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NUMPLACA" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="MARCAVEHICULOCARGA" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODMARCAVEHICULOCARGA" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CONFIGURACIONVEHICULOCARGA" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="PESOVACIOVEHICULOCARGA" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="UNIDADCAPACIDADVEHICULOCARGA" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="ANOFABRICACIONVEHICULOCARGA" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="TENEDORVEHICULOCARGA" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NUMIDTENEDORVEHICULOCARGA" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODTIPOIDTENEDORVEHICULOCARGA" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NOMENCLATURADIRECCIONTENEDORVEHICULOCARGA" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="MUNICIPIOTENEDORVEHICULOCARGA" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODMUNICIPIOTENEDORVEHICULOCARGA" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel25" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NUMSEGUROSOAT" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel26" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="FECHAVENCIMIENTOSOATVEHICULOCARGA" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel27" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NOMASEGURADORASOAT" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel37" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODCONFIGURACIONRESULTANTE" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel15">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="14" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Veh&#xed;culo"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel16">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Placa veh&#xed;culo"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel17">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Marca"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel18">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Configuraci&#xf3;n"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel19">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Peso vac&#xed;o"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel20">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="A&#xf1;o modelo"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel21">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Tenedor veh&#xed;culo"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel22">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Identificaci&#xf3;n"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel23">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Direcci&#xf3;n"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel24">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Municipio"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel25">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Poliza SOAT"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel26">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vencimiento"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel27">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Aseguradora"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel37">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Configuraci&#xf3;n resultante"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NUMPLACA">
+                </Component>
+                <Component class="javax.swing.JTextField" name="MARCAVEHICULOCARGA">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CONFIGURACIONVEHICULOCARGA">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="PESOVACIOVEHICULOCARGA">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="ANOFABRICACIONVEHICULOCARGA">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="TENEDORVEHICULOCARGA">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NUMIDTENEDORVEHICULOCARGA">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NOMENCLATURADIRECCIONTENEDORVEHICULOCARGA">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="MUNICIPIOTENEDORVEHICULOCARGA">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NUMSEGUROSOAT">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="FECHAVENCIMIENTOSOATVEHICULOCARGA">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NOMASEGURADORASOAT">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODCONFIGURACIONRESULTANTE">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="jButton3">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/com/enerfrisoft/gui/sources/limpiar.png"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODMARCAVEHICULOCARGA">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODTIPOIDTENEDORVEHICULOCARGA">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODMUNICIPIOTENEDORVEHICULOCARGA">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="UNIDADCAPACIDADVEHICULOCARGA">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel4">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                    <EtchetBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jLabel32" max="32767" attributes="0"/>
+                              <Component id="jLabel83" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="NUMMANIFIESTOCARGA" max="32767" attributes="0"/>
+                              <Component id="NUMORDENCARGUE" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel32" alignment="3" max="32767" attributes="0"/>
+                              <Component id="NUMMANIFIESTOCARGA" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel83" alignment="3" max="32767" attributes="0"/>
+                              <Component id="NUMORDENCARGUE" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel32">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="14" style="1"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                    <Property name="text" type="java.lang.String" value="Consecutivo del Manifiesto"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="NUMMANIFIESTOCARGA">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="18" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
+                    <Property name="text" type="java.lang.String" value="CALI600000"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel83">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="12" style="1"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                    <Property name="text" type="java.lang.String" value="Orden de Cargue No."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="NUMORDENCARGUE">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="14" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
+                    <Property name="text" type="java.lang.String" value="600000"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel5">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                    <EtchetBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel38" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="jButton5" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel39" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel41" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel42" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel43" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel44" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel45" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel46" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel47" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="MUNICIPIOCONDUCTOR" alignment="0" max="32767" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Component id="NUMIDCONDUCTOR" pref="266" max="32767" attributes="0"/>
+                                                      <Component id="IDCONDUCTOR" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="CODIDCONDUCTOR" min="-2" pref="75" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="TELEFONOCONDUCTOR" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="CODMUNICIPIOCONDUCTOR" min="-2" pref="75" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="VENCIMIENTOLICENCIACONDUCTOR" alignment="0" pref="266" max="32767" attributes="0"/>
+                                              <Component id="NUMLICENCIACONDUCTOR" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="CATEGORIACONDUCTOR" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Component id="NOMCONDUCTOR" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="NOMENCLATURADIRECCIONCONDUCTOR" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jButton5" max="32767" attributes="0"/>
+                              <Component id="jLabel38" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel39" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="IDCONDUCTOR" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODIDCONDUCTOR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel40" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NUMIDCONDUCTOR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel41" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NOMCONDUCTOR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel42" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NOMENCLATURADIRECCIONCONDUCTOR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel43" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="TELEFONOCONDUCTOR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel44" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="MUNICIPIOCONDUCTOR" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODMUNICIPIOCONDUCTOR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel45" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CATEGORIACONDUCTOR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel46" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NUMLICENCIACONDUCTOR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel47" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="VENCIMIENTOLICENCIACONDUCTOR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel38">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="14" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Primer Conductor"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel39">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Tipo identificaci&#xf3;n"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel40">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Numero Identificaci&#xf3;n"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel41">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Nombre"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel44">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Municipio"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel42">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Direcci&#xf3;n"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel43">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Tel&#xe9;fono"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel45">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Categor&#xed;a Licencia"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel46">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Licencia"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel47">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vencimiento"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="IDCONDUCTOR">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="UniversalDAO.getComboBoxModel(&quot;select nombre from tipo_id_conductor&quot;, conn)&#xd;&#xa;" type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IDCONDUCTORActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="IDCONDUCTOR.setSelectedItem(null);&#xd;&#xa;"/>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NUMIDCONDUCTOR">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NUMIDCONDUCTORActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NOMCONDUCTOR">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NOMENCLATURADIRECCIONCONDUCTOR">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="TELEFONOCONDUCTOR">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="MUNICIPIOCONDUCTOR">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CATEGORIACONDUCTOR">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NUMLICENCIACONDUCTOR">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="VENCIMIENTOLICENCIACONDUCTOR">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="jButton5">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/com/enerfrisoft/gui/sources/limpiar.png"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODIDCONDUCTOR">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODMUNICIPIOCONDUCTOR">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel7">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                    <EtchetBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel58" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="jButton6" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jLabel60" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel59" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel61" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel63" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel64" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel62" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel65" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel66" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel67" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="MUNICIPIOCONDUCTOR2" alignment="0" max="32767" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                      <Component id="VENCIMIENTOLICENCIACONDUCTOR2" alignment="0" pref="265" max="32767" attributes="0"/>
+                                                      <Component id="CATEGORIACONDUCTOR2" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                                      <Component id="NUMLICENCIACONDUCTOR2" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="TELEFONOCONDUCTOR2" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="0" pref="82" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="CODMUNICIPIOCONDUCTOR2" min="-2" pref="75" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="NUMIDCONDUCTOR2" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="IDCONDUCTOR2" alignment="0" pref="265" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="CODIDCONDUCTOR2" min="-2" pref="75" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Component id="NOMENCLATURADIRECCIONCONDUCTOR2" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="NOMCONDUCTOR2" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jButton6" max="32767" attributes="0"/>
+                              <Component id="jLabel58" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel59" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="IDCONDUCTOR2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODIDCONDUCTOR2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel60" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NUMIDCONDUCTOR2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel61" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NOMCONDUCTOR2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel63" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NOMENCLATURADIRECCIONCONDUCTOR2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel64" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="TELEFONOCONDUCTOR2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel62" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="MUNICIPIOCONDUCTOR2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODMUNICIPIOCONDUCTOR2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel65" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CATEGORIACONDUCTOR2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel66" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NUMLICENCIACONDUCTOR2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel67" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="VENCIMIENTOLICENCIACONDUCTOR2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel58">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="14" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Segundo Conductor"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel59">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Tipo identificaci&#xf3;n"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel60">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Numero Identificaci&#xf3;n"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel61">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Nombre"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel62">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Municipio"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel63">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Direcci&#xf3;n"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel64">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Tel&#xe9;fono"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel65">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Categor&#xed;a Licencia"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel66">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Licencia"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel67">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vencimiento"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="IDCONDUCTOR2">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="UniversalDAO.getComboBoxModel(&quot;select nombre from tipo_id_conductor&quot;, conn)" type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IDCONDUCTOR2ActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="IDCONDUCTOR2.setSelectedItem(null);"/>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NUMIDCONDUCTOR2">
+                </Component>
+                <Component class="javax.swing.JTextField" name="NOMCONDUCTOR2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NOMENCLATURADIRECCIONCONDUCTOR2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="TELEFONOCONDUCTOR2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="MUNICIPIOCONDUCTOR2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CATEGORIACONDUCTOR2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NUMLICENCIACONDUCTOR2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="VENCIMIENTOLICENCIACONDUCTOR2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="jButton6">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/com/enerfrisoft/gui/sources/limpiar.png"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODIDCONDUCTOR2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODMUNICIPIOCONDUCTOR2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel6">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                    <EtchetBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jLabel54" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel53" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel52" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel51" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel50" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel49" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="RETENCIONICAMANIFIESTOCARGA_U" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jLabel82" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                          <Component id="RETENCIONICAMANIFIESTOCARGA_D" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="retencionICA" min="-2" pref="150" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="saldoPorPagar" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="VALORANTICIPOMANIFIESTO" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="netoPagar" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="retencionEnLaFuente" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="VALORFLETEPACTADOVIAJE" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jLabel70" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel69" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel68" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel71" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jScrollPane2" min="-2" pref="326" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="RESPONSABLEPAGODESCARGUE" alignment="0" pref="235" max="32767" attributes="0"/>
+                                              <Component id="RESPONSABLEPAGOCARGUE" alignment="0" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="CODRESPONSABLEPAGODESCARGUE" min="-2" pref="62" max="-2" attributes="0"/>
+                                              <Component id="CODRESPONSABLEPAGOCARGUE" min="-2" pref="62" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="0" pref="67" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jLabel57" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel56" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="jLabel48" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="jLabel55" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="FECHAPAGOSALDOMANIFIESTO" min="-2" pref="230" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="MUNICIPIOPAGOSALDO" max="32767" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="CODMUNICIPIOPAGOSALDO" min="-2" pref="75" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jSeparator2" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="jSeparator3" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel48" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel49" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="VALORFLETEPACTADOVIAJE" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel50" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="retencionEnLaFuente" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel51" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="retencionICA" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="RETENCIONICAMANIFIESTOCARGA_U" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel82" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="RETENCIONICAMANIFIESTOCARGA_D" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel52" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="netoPagar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel53" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="VALORANTICIPOMANIFIESTO" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel54" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="saldoPorPagar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jSeparator2" min="-2" pref="3" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jLabel55" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel56" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="MUNICIPIOPAGOSALDO" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODMUNICIPIOPAGOSALDO" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel57" min="-2" max="-2" attributes="0"/>
+                              <Component id="FECHAPAGOSALDOMANIFIESTO" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jSeparator3" min="-2" pref="5" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel68" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel69" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="RESPONSABLEPAGOCARGUE" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODRESPONSABLEPAGOCARGUE" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel70" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="RESPONSABLEPAGODESCARGUE" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODRESPONSABLEPAGODESCARGUE" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel71" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="jScrollPane2" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel48">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="14" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Valor del Viaje"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel49">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Valor a pagar por el viaje"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel50">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Retenci&#xf3;n en la fuente"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel51">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Retencion ICA (% mil)"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel52">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Neto a pagar"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel53">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Valor anticipo"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel54">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Saldo por pagar"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel55">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="11" style="1"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
+                    <Property name="text" type="java.lang.String" value="Pago del saldo"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel56">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Lugar"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel57">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Fecha"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel68">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="11" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Responsable del Pago"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel69">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Cargue"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel70">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Descargue"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel71">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Recomendaciones"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="VALORFLETEPACTADOVIAJE">
+                  <Events>
+                    <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="VALORFLETEPACTADOVIAJEFocusLost"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VALORFLETEPACTADOVIAJEActionPerformed"/>
+                    <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="VALORFLETEPACTADOVIAJEKeyPressed"/>
+                    <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="VALORFLETEPACTADOVIAJEKeyReleased"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="retencionEnLaFuente">
+                  <Events>
+                    <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="retencionEnLaFuenteKeyReleased"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="retencionICA">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="netoPagar">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="VALORANTICIPOMANIFIESTO">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="0"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="VALORANTICIPOMANIFIESTOKeyReleased"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="saldoPorPagar">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="MUNICIPIOPAGOSALDO">
+                </Component>
+                <Component class="javax.swing.JComboBox" name="RESPONSABLEPAGOCARGUE">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="UniversalDAO.getComboBoxModel(&quot;select nombre from responsable_pago&quot;, conn)" type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RESPONSABLEPAGOCARGUEActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RESPONSABLEPAGOCARGUE.setSelectedItem(null);&#xd;&#xa;"/>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="RESPONSABLEPAGODESCARGUE">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="UniversalDAO.getComboBoxModel(&quot;select nombre from responsable_pago&quot;, conn)" type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RESPONSABLEPAGODESCARGUEActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RESPONSABLEPAGODESCARGUE.setSelectedItem(null);&#xd;&#xa;"/>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextArea" name="OBSERVACIONES">
+                      <Properties>
+                        <Property name="columns" type="int" value="20"/>
+                        <Property name="lineWrap" type="boolean" value="true"/>
+                        <Property name="wrapStyleWord" type="boolean" value="true"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="com.toedter.calendar.JDateChooser" name="FECHAPAGOSALDOMANIFIESTO">
+                  <Properties>
+                    <Property name="dateFormatString" type="java.lang.String" value="EEEE, dd MMMM yyyy"/>
+                    <Property name="minSelectableDate" type="java.util.Date" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new Date()" type="code"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jScrollPane1.getVerticalScrollBar().setUnitIncrement(16);"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JButton" name="jButton4">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/com/enerfrisoft/gui/sources/limpiar.png"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="jSeparator2">
+                </Component>
+                <Component class="javax.swing.JSeparator" name="jSeparator3">
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODMUNICIPIOPAGOSALDO">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODRESPONSABLEPAGODESCARGUE">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODRESPONSABLEPAGOCARGUE">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSpinner" name="RETENCIONICAMANIFIESTOCARGA_U">
+                  <Properties>
+                    <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+                      <SpinnerModel initial="0" maximum="100" minimum="0" numberType="java.lang.Integer" stepSize="1" type="number"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="RETENCIONICAMANIFIESTOCARGA_UStateChanged"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel82">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSpinner" name="RETENCIONICAMANIFIESTOCARGA_D">
+                  <Properties>
+                    <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+                      <SpinnerModel initial="0" maximum="99" minimum="0" numberType="java.lang.Integer" stepSize="1" type="number"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="RETENCIONICAMANIFIESTOCARGA_DStateChanged"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel8">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                    <EtchetBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="jLabel76" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel73" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="jLabel74" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="horasTotalesCargue" min="-2" pref="57" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Component id="minutosTotalesCargue" min="-2" pref="57" max="-2" attributes="0"/>
+                                                          <EmptySpace max="32767" attributes="0"/>
+                                                          <Component id="jLabel78" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Component id="jLabel75" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
+                                                          <Component id="jLabel77" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="horasTotalesDescargue" min="-2" pref="57" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="minutosTotalesDescargue" min="-2" pref="57" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="jLabel79" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="cantidadRemesas" alignment="0" pref="96" max="32767" attributes="0"/>
+                                              <Component id="kilogramosRemesas" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="galonesCargados" alignment="0" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jLabel72" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="0" pref="297" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jScrollPane3" alignment="0" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          <Component id="cleanRemesas" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel81" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="remesaAdicionar" min="-2" pref="484" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="adicionarRemesa" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="cleanRemesas" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                                  <Component id="jLabel72" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel81" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="remesaAdicionar" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="adicionarRemesa" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                          <Component id="jScrollPane3" min="-2" pref="101" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel75" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel74" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="minutosTotalesCargue" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel77" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cantidadRemesas" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel73" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="horasTotalesCargue" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel78" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="kilogramosRemesas" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                  <Component id="minutosTotalesDescargue" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel76" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="horasTotalesDescargue" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel79" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="galonesCargados" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel72">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="14" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Remesas"/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTable" name="tableRemesas">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                          <Table columnCount="9" rowCount="0">
+                            <Column editable="true" title="Remesa" type="java.lang.Object"/>
+                            <Column editable="true" title="Codigo" type="java.lang.Object"/>
+                            <Column editable="true" title="Producto" type="java.lang.Object"/>
+                            <Column editable="true" title="Cantidad" type="java.lang.Object"/>
+                            <Column editable="true" title="Unidad" type="java.lang.Object"/>
+                            <Column editable="true" title="Naturaleza" type="java.lang.Object"/>
+                            <Column editable="true" title="Empaque" type="java.lang.Object"/>
+                            <Column editable="true" title="Remitente" type="java.lang.Object"/>
+                            <Column editable="true" title="Destinatario" type="java.lang.Object"/>
+                          </Table>
+                        </Property>
+                        <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                          <TableColumnModel selectionModel="0">
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                          </TableColumnModel>
+                        </Property>
+                        <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                          <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="jLabel73">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Tiempo Total Cargue Pactado(Incluye Espera + Cargue)"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="horasTotalesCargue">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="text" type="java.lang.String" value="0"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel74">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Horas"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="minutosTotalesCargue">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="text" type="java.lang.String" value="0"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel75">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Minutos"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel76">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Tiempo Total Descargue Pactado(Incluye Espera + Descargue)"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="horasTotalesDescargue">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="text" type="java.lang.String" value="0"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="minutosTotalesDescargue">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="text" type="java.lang.String" value="0"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel77">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Cantidad de Remesas"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel78">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Kilogramos remesas"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel79">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Galones remesas"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="cantidadRemesas">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="text" type="java.lang.String" value="0"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="kilogramosRemesas">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="text" type="java.lang.String" value="0"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="galonesCargados">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="text" type="java.lang.String" value="0"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel81">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Adicionar remesa"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="remesaAdicionar">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="getRemesas()" type="code"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="remesaAdicionar.setSelectedItem(null);&#xd;&#xa;"/>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JButton" name="adicionarRemesa">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Adicionar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adicionarRemesaActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="cleanRemesas">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/com/enerfrisoft/gui/sources/limpiar.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value=" "/>
+                    <Property name="horizontalTextPosition" type="int" value="0"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cleanRemesasActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel9">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                    <EtchetBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel80" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="CLEARDATOSREMOLQUE1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jLabel28" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel29" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel30" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel31" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="CONFIGURACIONREMOLQUE1" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="MARCAREMOLQUE1" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="CODMARCAREMOLQUE1" pref="75" max="32767" attributes="0"/>
+                                              <Component id="CODCONFIGURACIONREMOLQUE1" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="NUMPLACAREMOLQUE1" min="-2" pref="150" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="PESOVEHICULOVACIOREMOLQUE1" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="UNIDADCAPACIDADREMOLQUE1" min="-2" pref="75" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="CLEARDATOSREMOLQUE1" max="32767" attributes="0"/>
+                              <Component id="jLabel80" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel28" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                              <Component id="NUMPLACAREMOLQUE1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel29" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="MARCAREMOLQUE1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODMARCAREMOLQUE1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel30" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CONFIGURACIONREMOLQUE1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODCONFIGURACIONREMOLQUE1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel31" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="PESOVEHICULOVACIOREMOLQUE1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="UNIDADCAPACIDADREMOLQUE1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel28">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Placa Remolque"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NUMPLACAREMOLQUE1">
+                </Component>
+                <Component class="javax.swing.JTextField" name="MARCAREMOLQUE1">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel29">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Marca"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel30">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Configuraci&#xf3;n"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CONFIGURACIONREMOLQUE1">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="PESOVEHICULOVACIOREMOLQUE1">
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel31">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Peso Vacio"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel80">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="14" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Datos de Remolque 1"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODMARCAREMOLQUE1">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="CLEARDATOSREMOLQUE1">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/com/enerfrisoft/gui/sources/limpiar.png"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CLEARDATOSREMOLQUE1ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODCONFIGURACIONREMOLQUE1">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="UNIDADCAPACIDADREMOLQUE1">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel10">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                    <EtchetBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel85" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="CLEARDATOSREMOLQUE2" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jLabel33" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel34" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel35" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel36" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="NUMPLACAREMOLQUE2" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="PESOVEHICULOVACIOREMOLQUE2" min="-2" pref="150" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="UNIDADCAPACIDADREMOLQUE2" min="-2" pref="75" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="CONFIGURACIONREMOLQUE2" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="MARCAREMOLQUE2" pref="332" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="CODMARCAREMOLQUE2" pref="75" max="32767" attributes="0"/>
+                                              <Component id="CODCONFIGURACIONREMOLQUE2" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="CLEARDATOSREMOLQUE2" max="32767" attributes="0"/>
+                              <Component id="jLabel85" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel33" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="NUMPLACAREMOLQUE2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel34" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="MARCAREMOLQUE2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODMARCAREMOLQUE2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel35" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CONFIGURACIONREMOLQUE2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="CODCONFIGURACIONREMOLQUE2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel36" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="PESOVEHICULOVACIOREMOLQUE2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="UNIDADCAPACIDADREMOLQUE2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel85">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="14" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Datos de Remolque 2"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="NUMPLACAREMOLQUE2">
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel33">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Placa Remolque"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel34">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Marca"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="MARCAREMOLQUE2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel35">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Configuraci&#xf3;n"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CONFIGURACIONREMOLQUE2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel36">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Peso vac&#xed;o"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="PESOVEHICULOVACIOREMOLQUE2">
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODMARCAREMOLQUE2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="CLEARDATOSREMOLQUE2">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/com/enerfrisoft/gui/sources/limpiar.png"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CLEARDATOSREMOLQUE2ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="UNIDADCAPACIDADREMOLQUE2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CODCONFIGURACIONREMOLQUE2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="viewManifiestos">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/com/enerfrisoft/gui/sources/tabla.png"/>
+                </Property>
+                <Property name="toolTipText" type="java.lang.String" value="Mostrar registros"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="viewManifiestosActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="connectionStatus">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/com/enerfrisoft/gui/sources/connection.png"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="limpiarCaracteristicas">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/com/enerfrisoft/gui/sources/limpiar.png"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="limpiarCaracteristicasActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

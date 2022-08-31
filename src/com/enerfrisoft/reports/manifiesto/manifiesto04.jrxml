@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_Letter" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="8" bottomMargin="8" uuid="5032ecef-7ce9-4e74-b1d0-2b47f7865fc7">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="empresa_1"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="PATH_LOGO" class="java.lang.String"/>
+	<parameter name="PATH_MANIFIESTO01" class="java.lang.String"/>
+	<parameter name="PATH_MANIFIESTO02" class="java.lang.String"/>
+	<parameter name="PATH_MANIFIESTO03" class="java.lang.String"/>
+	<parameter name="NUMMANIFIESTOCARGA" class="java.lang.String"/>
+	<parameter name="PATH_WATERMARK" class="java.lang.String"/>
+	<parameter name="PATH_FIRMA" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[call m4($P{NUMMANIFIESTOCARGA})]]>
+	</queryString>
+	<field name="CONSECUTIVOREMESA" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="CONSECUTIVOREMESA"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="remesa"/>
+	</field>
+	<field name="HORASPACTOCARGA" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="HORASPACTOCARGA"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="remesa"/>
+	</field>
+	<field name="HORASPACTODESCARGUE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="HORASPACTODESCARGUE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="remesa"/>
+	</field>
+	<field name="FECHALLEGADACARGUE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="FECHALLEGADACARGUE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="remesa"/>
+	</field>
+	<field name="HORALLEGADACARGUEREMESA" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="HORALLEGADACARGUEREMESA"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="remesa"/>
+	</field>
+	<field name="FECHASALIDACARGUE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="FECHASALIDACARGUE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="remesa"/>
+	</field>
+	<field name="HORASALIDACARGUEREMESA" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="HORASALIDACARGUEREMESA"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="remesa"/>
+	</field>
+	<background>
+		<band height="596">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="85" y="90" width="582" height="419" uuid="85d7dc09-6352-4cfa-96ee-1afd6287d2c0"/>
+				<imageExpression><![CDATA[$P{PATH_WATERMARK}]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="48">
+			<subreport>
+				<reportElement isPrintRepeatedValues="false" x="-20" y="0" width="792" height="48" uuid="ee57980e-2fe1-4a37-b247-0f8fc0398599"/>
+				<subreportParameter name="PATH_LOGO">
+					<subreportParameterExpression><![CDATA[$P{PATH_LOGO}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="PATH_MANIFIESTO01">
+					<subreportParameterExpression><![CDATA[$P{PATH_MANIFIESTO01}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="PATH_MANIFIESTO02">
+					<subreportParameterExpression><![CDATA[$P{PATH_MANIFIESTO02}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="PATH_MANIFIESTO03">
+					<subreportParameterExpression><![CDATA[$P{PATH_MANIFIESTO03}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="NUMMANIFIESTOCARGA">
+					<subreportParameterExpression><![CDATA[$P{NUMMANIFIESTOCARGA}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="PATH_FIRMA">
+					<subreportParameterExpression><![CDATA[$P{PATH_FIRMA}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{PATH_MANIFIESTO03}]]></subreportExpression>
+			</subreport>
+		</band>
+	</title>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="0" width="74" height="30" uuid="7d4388d0-6b59-4505-99cf-22ce77af1368">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="74" y="0" width="74" height="30" uuid="25262b29-310a-4bca-b198-6e5f4cfa132b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="148" y="0" width="74" height="30" uuid="dd74a0ae-f83b-48d8-946b-c68107e4674a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="222" y="0" width="74" height="30" uuid="15b70156-4cac-405e-b3dc-370d1cdad316">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="296" y="0" width="74" height="30" uuid="ac57021b-6d74-4af8-9f55-7f58d52c8ccc">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="370" y="0" width="74" height="30" uuid="3543ea99-e810-4d82-bbb2-8af3db637c7e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="444" y="0" width="74" height="30" uuid="2bd4bbe7-6578-4ab0-9896-51c2fef983ec">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="518" y="0" width="74" height="30" uuid="92c881b6-042a-4d5e-a2eb-5b7190137124">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="592" y="0" width="81" height="30" uuid="8a998d7e-a87e-4486-a593-1e190d3c550d">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="673" y="0" width="78" height="30" uuid="126d9af5-97c8-4d4c-81c8-64509ccc623f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="0" width="74" height="30" uuid="8b25c769-3b6b-4a0e-86ad-83900b9255ba">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6599de56-321b-457e-8bf6-d94fd1f83ffc"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CONSECUTIVOREMESA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="74" y="0" width="37" height="30" uuid="0533e113-7af0-4fe5-bf26-4212efedff5c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3802401f-c82d-4882-9206-b77668304c3e"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{HORASPACTOCARGA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="111" y="0" width="37" height="30" uuid="806a58a5-1134-4ee9-95ef-0d65b990a716">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="007fd347-2eb0-44de-abd5-7eaa0c2ed015"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{HORASPACTODESCARGUE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="148" y="0" width="37" height="30" uuid="bcb40bcb-5a31-42b8-8acd-e680d106b688">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="72000416-3942-43fe-908b-9ac72b5e4272"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FECHALLEGADACARGUE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="185" y="0" width="37" height="30" uuid="a3d2a898-c3a4-4fa5-a9c4-89b740148497">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="68ad4da7-9a01-4e94-b617-56faa82b4234"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{HORALLEGADACARGUEREMESA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="222" y="0" width="37" height="30" uuid="d4170692-4299-48d9-bf36-f7548930a162">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e599552e-6a44-4c25-80b4-dc3fb0e9b0bf"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FECHASALIDACARGUE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="259" y="0" width="37" height="30" uuid="05085da6-d7a1-470a-a073-3c5f9045735c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5fefb20a-b244-47af-892b-4a5a10b61705"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{HORASALIDACARGUEREMESA}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,50 @@
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" name="IBPMServicesservice" targetNamespace="http://tempuri.org/">
+<message name="AtenderMensajeRNDC0Request">
+<part name="Request" type="xs:string"/>
+</message>
+<message name="AtenderMensajeRNDC0Response">
+<part name="return" type="xs:string"/>
+</message>
+<message name="AtenderMensajeBPM1Request">
+<part name="Request" type="xs:string"/>
+</message>
+<message name="AtenderMensajeBPM1Response">
+<part name="return" type="xs:string"/>
+</message>
+<portType name="IBPMServices">
+<operation name="AtenderMensajeRNDC">
+<input message="tns:AtenderMensajeRNDC0Request"/>
+<output message="tns:AtenderMensajeRNDC0Response"/>
+</operation>
+<operation name="AtenderMensajeBPM">
+<input message="tns:AtenderMensajeBPM1Request"/>
+<output message="tns:AtenderMensajeBPM1Response"/>
+</operation>
+</portType>
+<binding name="IBPMServicesbinding" type="tns:IBPMServices">
+<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+<operation name="AtenderMensajeRNDC">
+<soap:operation soapAction="urn:BPMServicesIntf-IBPMServices#AtenderMensajeRNDC" style="rpc"/>
+<input>
+<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:BPMServicesIntf-IBPMServices"/>
+</input>
+<output>
+<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:BPMServicesIntf-IBPMServices"/>
+</output>
+</operation>
+<operation name="AtenderMensajeBPM">
+<soap:operation soapAction="urn:BPMServicesIntf-IBPMServices#AtenderMensajeBPM" style="rpc"/>
+<input>
+<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:BPMServicesIntf-IBPMServices"/>
+</input>
+<output>
+<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:BPMServicesIntf-IBPMServices"/>
+</output>
+</operation>
+</binding>
+<service name="IBPMServicesservice">
+<port name="IBPMServicesPort" binding="tns:IBPMServicesbinding">
+<soap:address location="http://rndcws.mintransporte.gov.co:8080/ws/svr008w.dll/soap/IBPMServices"/>
+</port>
+</service>
+</definitions>

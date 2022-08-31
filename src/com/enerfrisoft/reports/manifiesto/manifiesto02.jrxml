@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="manifiesto_sub1" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="c02e52aa-85a7-42c4-9a82-d9ae49bdea0b">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="empresa_1"/>
+	<parameter name="NUMMANIFIESTOCARGA" class="java.lang.String"/>
+	<parameter name="PATH_MANIFIESTO01" class="java.lang.String"/>
+	<parameter name="PATH_LOGO" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[call m2( $P{NUMMANIFIESTOCARGA} )]]>
+	</queryString>
+	<field name="No_remesa" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="No_remesa"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="remesa"/>
+	</field>
+	<field name="unidad_medida" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="unidad_medida"/>
+	</field>
+	<field name="cantidad" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="cantidad"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="remesa"/>
+	</field>
+	<field name="naturaleza" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="naturaleza"/>
+	</field>
+	<field name="tipo_empaque" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="tipo_empaque"/>
+	</field>
+	<field name="cod_producto_transportado" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="cod_producto_transportado"/>
+	</field>
+	<field name="producto_transportado" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="producto_transportado"/>
+	</field>
+	<field name="comentario" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="comentario"/>
+	</field>
+	<field name="id_remitente" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="id_remitente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tercero"/>
+	</field>
+	<field name="nombre_remitente" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nombre_remitente"/>
+	</field>
+	<field name="direccion_remitente" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="direccion_remitente"/>
+	</field>
+	<field name="municipio_remitente" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="municipio_remitente"/>
+	</field>
+	<field name="id_destinatario" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="id_destinatario"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tercero"/>
+	</field>
+	<field name="nombre_destinatario" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nombre_destinatario"/>
+	</field>
+	<field name="direccion_destinatario" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="direccion_destinatario"/>
+	</field>
+	<field name="municipio_destinatario" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="municipio_destinatario"/>
+	</field>
+	<field name="tomador_poliza" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="tomador_poliza"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="22">
+			<subreport>
+				<reportElement x="-20" y="0" width="792" height="22" uuid="b77f8257-f59c-431a-b018-8d286d538156"/>
+				<subreportParameter name="NUMMANIFIESTOCARGA">
+					<subreportParameterExpression><![CDATA[$P{NUMMANIFIESTOCARGA}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="PATH_CABECERA">
+					<subreportParameterExpression><![CDATA[$P{PATH_MANIFIESTO01}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="PATH_LOGO">
+					<subreportParameterExpression><![CDATA[$P{PATH_LOGO}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{PATH_MANIFIESTO01}]]></subreportExpression>
+			</subreport>
+		</band>
+	</title>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Transparent" x="679" y="0" width="72" height="30" uuid="f7731b1c-fa69-4546-894b-744ec584a0a8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="499" y="0" width="180" height="30" uuid="f7e77317-f554-4af7-a049-40c0c7da68dd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="317" y="0" width="182" height="30" uuid="2d31eb48-8f8a-4419-b2d4-693e0b524a10"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="171" y="0" width="146" height="30" uuid="bb277250-10af-47fa-8c0c-c7b92a78243d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="126" y="0" width="45" height="30" uuid="479eedd8-8be0-4e03-b2ed-55a6e34b004d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="89" y="0" width="37" height="30" uuid="de69c01c-e9de-4e78-a2ac-90a056fed80a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="45" y="0" width="44" height="30" uuid="739135dd-e126-4fa9-95d7-0c80e067eb66"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="0" width="45" height="30" uuid="849fafe1-de08-4aa6-9ee6-30ae1c1e60f8">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="0" width="45" height="30" uuid="7d5fb3a6-e6b5-4236-881e-25b81598c216">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="129862a3-bd73-43f0-8e9e-6d3f8df6199e"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{No_remesa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="45" y="0" width="44" height="30" uuid="340f0e0c-6fc3-4786-8b54-030aba46b333">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="817f76f8-b50d-4e15-a32c-8d69293585a3"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{unidad_medida}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="89" y="0" width="36" height="30" uuid="ee0b8876-febd-43c3-9e30-1062e39e7fa4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="31e3c431-efea-40bd-95ac-8fc348f7ccca"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cantidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="126" y="0" width="44" height="30" uuid="b64c29c5-1ff2-4ca8-ac0a-e8a7c3ad9a38">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="13a162b9-bb59-4761-b641-558917040084"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{naturaleza}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="171" y="0" width="49" height="10" uuid="bc9dcf64-ddfb-45e6-9f71-e0ddd442c8f9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3adcdfc3-0a6e-4f25-bf7f-5e9394458608"/>
+				</reportElement>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipo_empaque}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="220" y="0" width="97" height="10" uuid="8342c977-50e9-4ef8-84cd-6b17e2cab145">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9c9da0fb-d68d-42df-8d78-b2a99421ae28"/>
+				</reportElement>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cod_producto_transportado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="171" y="20" width="146" height="10" uuid="5b74e4c4-6202-44fb-a5a8-257f2f5abadd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="040f8fba-24b6-443f-83e9-cefc4f61c8a6"/>
+				</reportElement>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comentario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="318" y="0" width="52" height="10" uuid="cad4a2ca-f430-434d-84db-1ef8bc4cf5b3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="09440537-4013-4d88-88af-24944e20cca6"/>
+				</reportElement>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_remitente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="370" y="0" width="128" height="10" uuid="25aa49d2-a303-4b3d-aea0-67b6bdf84b43">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d2fbd29-150d-46b2-b2bb-4b94a26b8c08"/>
+				</reportElement>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre_remitente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="318" y="10" width="180" height="10" uuid="c1c2a2ad-ee16-46f1-938f-f2e9881c21fa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7b6cbfd6-0e1d-469c-a27a-ffd365081e34"/>
+				</reportElement>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccion_remitente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="318" y="20" width="180" height="10" uuid="a1d85a35-733e-48de-9b12-1ecb3dec7012">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b1186410-ba89-4605-99e5-82a01958e5f5"/>
+				</reportElement>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{municipio_remitente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="499" y="0" width="52" height="10" uuid="ee863a60-8b04-4ba6-973d-d72fa8c639cc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f7cc74a9-c1e4-4f59-9503-26427979d327"/>
+				</reportElement>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_destinatario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="551" y="0" width="128" height="10" uuid="8929a8e1-f7cd-4e4b-882d-d7dba6d90318">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f3e828ef-62d5-4e78-8ab0-8796bfdb236a"/>
+				</reportElement>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre_destinatario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="499" y="10" width="180" height="10" uuid="6329ce47-2b12-4e9b-a931-07173c32f14d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1963c025-6f05-478e-9556-6ec94014141a"/>
+				</reportElement>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccion_destinatario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="499" y="20" width="180" height="10" uuid="389e1726-afeb-4104-8f01-67663ffdca15">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="42da3d75-f188-431f-8e4f-566ee39f6804"/>
+				</reportElement>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{municipio_destinatario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="680" y="0" width="70" height="30" uuid="612de9ca-6245-4be7-b653-2d9125c159b5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0e6ab8e9-fe92-48ae-91da-17a536ca4e74"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tomador_poliza}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="171" y="10" width="146" height="10" uuid="bc4a3caf-8105-48d1-b546-664a8641db4e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="551e978c-a4d0-4092-8c36-32125feedbaa"/>
+				</reportElement>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{producto_transportado}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

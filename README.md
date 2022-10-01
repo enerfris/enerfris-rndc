@@ -12,3 +12,4 @@
 ![sc07](https://github.com/sebastianaf/enerfrisoft-carga/blob/main/screenshots/Screenshot_7.png?raw=true)
 ![sc08](https://github.com/sebastianaf/enerfrisoft-carga/blob/main/screenshots/Screenshot_8.png?raw=true)
 ![sc09](https://github.com/sebastianaf/enerfrisoft-carga/blob/main/screenshots/Screenshot_9.png?raw=true)
+![sc10](https://github.com/sebastianaf/enerfrisoft-carga/blob/main/screenshots/Screenshot_10.png?raw=true)
